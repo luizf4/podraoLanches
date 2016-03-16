@@ -7,6 +7,7 @@ package view;
 
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.Toolkit;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.text.NumberFormat;
@@ -177,6 +178,8 @@ public class SecondLanches extends javax.swing.JFrame {
      */
     public SecondLanches() {
         initComponents();
+        
+        this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconeLanche.png")));
 
     }
 
@@ -211,6 +214,7 @@ public class SecondLanches extends javax.swing.JFrame {
         jChkPicles = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Second Lanches");
         setMinimumSize(new java.awt.Dimension(450, 560));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
